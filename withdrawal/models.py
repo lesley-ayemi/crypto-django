@@ -11,8 +11,7 @@ class WithdrawalType(models.Model):
         return self.name
     
     class Meta:
-        verbose_name_plural = 'Add new withdrawal'
-        verbose_name = 'Add new withdrawal'
+        verbose_name_plural = 'Add Widthrawal Type'
     
 class WithdrawalMethod(models.Model):
     APPROVED = 'approved'

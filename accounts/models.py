@@ -39,6 +39,7 @@ class CustomUserManager(BaseUserManager):
 class CustomUser(AbstractUser):
     username = None
     email = models.EmailField(_('email address'), unique=True)
+    balance = models.FloatField(default=0)
     
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
